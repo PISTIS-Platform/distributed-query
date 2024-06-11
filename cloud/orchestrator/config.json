@@ -1,0 +1,15 @@
+ {
+  "app": {
+    "host": "0.0.0.0",
+    "port": 5001
+  },
+  "iam": {
+    "url": "https://auth.pistis.isi.gr",
+    "realm": "PISTIS-EXAMPLE",
+    "public_key": null,
+    "jwt_local": true,
+    "audience": null
+  },
+  "registry": null,
+  "catalogue": null
+ }

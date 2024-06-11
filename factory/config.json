@@ -1,0 +1,23 @@
+{
+  "app": {
+    "host": "0.0.0.0",
+    "port": 5000,
+    "token": ""
+  },
+  "hashing": {
+    "size": 128,
+    "threshold": 0.5
+  },
+  "db": {
+    "host": "db.dq.pistis",
+    "port": 6379
+  },
+  "iam": {
+    "url": "https://auth.pistis.isi.gr",
+    "realm": "PISTIS-EXAMPLE",
+    "public_key": null,
+    "jwt_local": true,
+    "audience": null
+  },
+  "ds": "ds_url"
+}
