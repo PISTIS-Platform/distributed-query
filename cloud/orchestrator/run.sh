@@ -11,7 +11,7 @@ tee /pistis-dq-orchestrator/config.json > /dev/null <<EOT
     "realm": "${IAM_REALM}",
     "public_key": "${IAM_PK}",
     "jwt_local": ${JWT_LOCAL},
-    "audience": ${IAM_AUDIENCE}
+    "audience": "${IAM_AUDIENCE}"
   },
   "registry": "${REGISTRY_URL}",
   "catalogue": "${CATALOGUE_URL}"
