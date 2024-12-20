@@ -4,10 +4,17 @@ from datasketch import MinHash, MinHashLSH
 from shared import config
 
 
-storage_config = {
-    'type': 'redis',
-    'redis': {'host': config['db']['host'], 'port': config['db']['port']}
-}
+storage_config = None
+if 'db' in config:
+    if 'host' in config['db'] and 'port' in config['db']:
+        if config['db']['host'] != '':
+            storage_config = {
+                'type': 'redis',
+                'redis': {
+                    'host': config['db']['host'], 'port': config['db']['port'],
+                    'username': config['db']['username'], 'password': config['db']['password']
+                }
+            }
 lsh = MinHashLSH(threshold=config['lsh']['threshold'], num_perm=config['lsh']['size'], storage_config=storage_config)
 
 

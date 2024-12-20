@@ -4,12 +4,13 @@
     "port": 5001
   },
   "iam": {
-    "url": "https://auth.pistis.isi.gr",
-    "realm": "PISTIS-EXAMPLE",
+    "url": "https://auth.pistis-market.eu",
+    "realm": "PISTIS",
     "public_key": null,
     "jwt_local": true,
-    "audience": null
+    "audience": "resource-server"
   },
-  "registry": null,
-  "catalogue": null
+  "registry": "https://pistis-market.eu/srv/factories-registry",
+  "catalogue": "https://pistis-market.eu/srv/search",
+  "repository": "https://pistis-market.eu/srv/repo"
  }

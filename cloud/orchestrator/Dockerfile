@@ -7,6 +7,7 @@ ENV IAM_AUDIENCE=""
 ENV JWT_LOCAL="true"
 ENV REGISTRY_URL=""
 ENV CATALOGUE_URL=""
+ENV REPOSITORY_URL=""
 
 WORKDIR /pistis-dq-orchestrator
 COPY . /pistis-dq-orchestrator

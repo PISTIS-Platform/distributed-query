@@ -4,20 +4,20 @@
     "port": 5000,
     "token": ""
   },
-  "hashing": {
-    "size": 128,
-    "threshold": 0.5
+  "lsh": {
+    "size": 1024,
+    "threshold": 0.1
   },
   "db": {
-    "host": "db.dq.pistis",
+    "host": "",
     "port": 6379
   },
   "iam": {
-    "url": "https://auth.pistis.isi.gr",
-    "realm": "PISTIS-EXAMPLE",
+    "url": "https://auth.pistis-market.eu",
+    "realm": "PISTIS",
     "public_key": null,
     "jwt_local": true,
     "audience": null
   },
-  "ds": "ds_url"
+  "ds_url": "https://develop.pistis-market.eu/srv/factory-data-storage"
 }

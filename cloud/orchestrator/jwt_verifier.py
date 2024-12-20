@@ -16,8 +16,9 @@ class JWTVerifier:
             if iam_realm is not None and iam_realm != '':
                 self.realm_url = '{}/auth/realms/{}'.format(iam_url, iam_realm)
                 self.token_url = '{}/protocol/openid-connect/token'.format(self.realm_url)
-                self.pk = iam_pk
-                self.jwt_local = jwt_local
+                self.jwt_local = bool(jwt_local)
+                if iam_pk is not None and iam_pk != '':
+                    self.pk = iam_pk
                 if audience is not None and audience != '':
                     self.audience = audience
         if self.realm_url is None:

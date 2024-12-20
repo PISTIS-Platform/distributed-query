@@ -19,8 +19,9 @@ try:
     app_host = config['app']['host']
     app_port = config['app']['port']
     iam = config['iam']
-    jwt = JWTVerifier(iam['url'], iam['realm'], iam['public_key'], iam['jwt_local'], iam['audience'])
-    dq = DistributedQuery(iam['url'], iam['realm'], config['registry'], config['catalogue'])
+    jwt = JWTVerifier(iam['url'], iam['realm'], iam['public_key'], iam['jwt_local'], None)
+    dq = DistributedQuery(iam['url'], iam['realm'], iam['audience'],
+                          config['registry'], config['catalogue'], config['repository'])
 except (AttributeError, ValueError) as e:
     sys.exit(str(e))
 

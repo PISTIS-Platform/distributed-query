@@ -14,7 +14,8 @@ tee /pistis-dq-orchestrator/config.json > /dev/null <<EOT
     "audience": "${IAM_AUDIENCE}"
   },
   "registry": "${REGISTRY_URL}",
-  "catalogue": "${CATALOGUE_URL}"
+  "catalogue": "${CATALOGUE_URL}",
+  "repository": "${REPOSITORY_URL}"
 }
 EOT
 

@@ -13,14 +13,16 @@ tee /pistis-dq-lsh/config.json > /dev/null <<EOT
   },
   "db": {
     "host": "${DB_HOST}",
-    "port": "${DB_PORT}"
+    "port": "${DB_PORT}",
+    "username": "${DB_USERNAME}",
+    "password": "${DB_PASSWORD}"
   },
   "iam": {
     "url": "${IAM_URL}",
     "realm": "${IAM_REALM}",
     "public_key": "${IAM_PK}",
     "jwt_local": ${JWT_LOCAL},
-    "audience": ${IAM_AUDIENCE}
+    "audience": "${IAM_AUDIENCE}"
   },
   "ds_url": "${DS_URL}"
 }
