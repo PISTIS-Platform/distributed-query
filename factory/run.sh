@@ -24,7 +24,10 @@ tee /pistis-dq-lsh/config.json > /dev/null <<EOT
     "jwt_local": ${JWT_LOCAL},
     "audience": "${IAM_AUDIENCE}"
   },
-  "ds_url": "${DS_URL}"
+  "ds_url": "${DS_URL}",
+  "cat_url": "${CAT_URL}",
+  "repo_url": "${REPO_URL}",
+  "dist_url": "${DIST_URL}"
 }
 EOT
 

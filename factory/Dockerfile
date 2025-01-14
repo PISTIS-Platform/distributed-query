@@ -11,6 +11,9 @@ ENV IAM_PK=""
 ENV IAM_AUDIENCE=""
 ENV JWT_LOCAL="true"
 ENV DS_URL=""
+ENV CAT_URL=""
+ENV REPO_URL=""
+ENV DIST_URL=""
 
 WORKDIR /pistis-dq-lsh
 COPY . /pistis-dq-lsh
