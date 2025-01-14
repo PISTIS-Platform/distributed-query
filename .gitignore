@@ -1,0 +1,5 @@
+.idea
+
+/cloud/orchestrator/config.json
+/cloud/re-reanker/config.json
+/factory/config.json
